@@ -1,0 +1,82 @@
+media:
+  input: assets/uploads
+  output: assets/uploads
+
+content:
+  - name: site
+    label: Website Content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: home
+        label: Home Page
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: name, label: Artist name, type: string }
+          - { name: studio_line, label: Studio line, type: string }
+          - { name: portrait, label: Portrait image, type: image }
+          - { name: critical_eyebrow, label: Critical Context label, type: string }
+          - { name: critical_title, label: Critical Context title, type: string }
+          - name: critical_paragraphs
+            label: Critical Context paragraphs
+            type: list
+            fields:
+              - { name: value, label: Paragraph, type: text }
+      - name: contact
+        label: Contact Page
+        type: object
+        fields:
+          - { name: page_title, label: Page title, type: string }
+          - { name: intro, label: Intro text, type: text }
+          - { name: name, label: Contact heading, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: phone_display, label: Phone display, type: string }
+          - { name: phone_link, label: Phone link, type: string }
+      - name: available
+        label: Available Page
+        type: object
+        fields:
+          - { name: page_title, label: Page title, type: string }
+          - name: works
+            label: Available works
+            type: list
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: image, label: Image, type: image }
+              - { name: details, label: Dimensions / details, type: string }
+              - { name: medium, label: Medium, type: string }
+      - name: artworks
+        label: Artworks Page
+        type: object
+        fields:
+          - { name: page_title, label: Page title, type: string }
+          - { name: intro, label: Intro text, type: text }
+          - name: works
+            label: Artworks
+            type: list
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: thumb, label: Thumbnail image, type: image }
+              - { name: view, label: Large-view page path, type: string }
+      - name: corporate
+        label: Corporate Page
+        type: object
+        fields:
+          - { name: page_title, label: Page title, type: string }
+          - { name: gallery_title, label: Gallery heading, type: string }
+          - name: installations
+            label: Installations
+            type: list
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: thumb, label: Thumbnail image, type: image }
+              - { name: view, label: Large-view page path, type: string }
+      - name: videos
+        label: Videos Page
+        type: object
+        fields:
+          - { name: page_title, label: Page title, type: string }
+          - { name: corporate_title, label: Corporate video title, type: string }
+          - { name: light_title, label: Light-effects video title, type: string }
