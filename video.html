@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos — Susan Klebanoff</title>
+  <meta name="description" content="Video works and studio documentation by Susan Klebanoff.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Susan Klebanoff</a>
+  <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="artworks.html">Artworks</a><a href="corporate.html">Corporate Installations</a><a href="available.html">Available</a><a class="active" href="video.html">Videos</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="page-intro">
+<h1>Videos</h1>
+    <p class="lede">Film and video documentation related to Susan Klebanoff's work.</p>
+  </section>
+
+
+  <section class="video-section" aria-labelledby="corporate-video-title">
+    <div class="video-frame">
+      <video controls preload="metadata" poster="assets/klebanoff-corporate-installations-poster.jpg" playsinline style="width:100%;height:auto;display:block;background:#000;">
+        <source src="assets/klebanoff-corporate-installations.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+    </div>
+    <div class="video-copy">
+      <h2 id="corporate-video-title">Klebanoff Corporate Installations</h2>
+      <p>Corporate installation video by Klebanoff Studios.</p>
+    </div>
+  </section>
+
+  <section class="video-section" aria-labelledby="featured-video-title">
+    <div class="video-frame" id="video-container">
+      <noscript><p><a href="https://www.youtube.com/watch?v=BKhmZreg0w0">Watch the video on YouTube</a></p></noscript>
+    </div>
+    <div class="video-copy">
+      <h2 id="featured-video-title" class="featured-video-heading">The effects of light on the Multilayer Tapestries</h2>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><p>© Susan Klebanoff · Klebanoff Studios</p></footer>
+<script src="script.js"></script>
+<script>
+(function () {
+  const container = document.getElementById('video-container');
+  const id = 'BKhmZreg0w0';
+  if (window.location.protocol === 'file:') {
+    container.innerHTML = `
+      <a class="video-local-fallback" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener" aria-label="Play Susan Klebanoff video on YouTube">
+        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Susan Klebanoff video preview">
+        <span class="video-play-button">▶</span>
+        <span class="video-play-label">Play video</span>
+      </a>
+      <p class="video-local-note"></p>`;
+  } else {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0`;
+    iframe.title = 'Susan Klebanoff video';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    container.appendChild(iframe);
+  }
+})();
+</script>
+<script src="cms-content.js"></script>
+</body>
+</html>
