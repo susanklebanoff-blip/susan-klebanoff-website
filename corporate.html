@@ -7,7 +7,7 @@
   <meta name="description" content="Corporate installations and site-specific multilayered tapestries by Susan Klebanoff.">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Corporate thumbnails: same footprint as Artwork thumbnails, with a clearly visible gray mat around every image. */
+    /* Corporate thumbnails: preserve image size; use Artwork gray only in unused frame space. */
     .corporate-installation-gallery.corporate-thumbnails{
       display:grid!important;
       grid-template-columns:repeat(4,minmax(140px,1fr))!important;
@@ -28,7 +28,7 @@
       justify-content:center!important;
       width:100%!important;
       height:220px!important;
-      padding:14px!important;
+      padding:0!important;
       margin:0!important;
       overflow:hidden!important;
       box-sizing:border-box!important;
@@ -65,7 +65,7 @@
       }
       .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
         height:190px!important;
-        padding:12px!important;
+        padding:0!important;
       }
     }
     @media(max-width:390px){
