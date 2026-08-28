@@ -7,7 +7,7 @@
   <meta name="description" content="Corporate installations and site-specific multilayered tapestries by Susan Klebanoff.">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Corporate gallery: larger thumbnails only. Existing links to large views and carousel/navigation remain unchanged. */
+    /* Corporate gallery: preserve thumbnail frames and links while enlarging the images inside them. */
     .corporate-installation-gallery.corporate-thumbnails{
       grid-template-columns:repeat(4,minmax(190px,1fr))!important;
       max-width:1160px!important;
@@ -19,6 +19,17 @@
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
       height:255px!important;
       padding:.7rem!important;
+      overflow:hidden!important;
+    }
+    .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame img{
+      display:block!important;
+      width:100%!important;
+      height:100%!important;
+      max-width:none!important;
+      max-height:none!important;
+      object-fit:contain!important;
+      transform:scale(1.14)!important;
+      transform-origin:center center!important;
     }
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb h3{
       font-size:1rem!important;
