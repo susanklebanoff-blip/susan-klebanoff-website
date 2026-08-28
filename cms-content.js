@@ -88,6 +88,74 @@
       }
 
       if (path === 'corporate.html') {
+        const style = document.createElement('style');
+        style.textContent = `
+          .corporate-installation-gallery.corporate-thumbnails{
+            display:grid!important;
+            grid-template-columns:repeat(4,minmax(140px,1fr))!important;
+            gap:4rem 2.5rem!important;
+            max-width:1000px!important;
+            margin:2rem auto 0!important;
+            align-items:start!important;
+          }
+          .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+            display:block!important;
+            width:100%!important;
+            max-width:210px!important;
+            margin:0 auto!important;
+          }
+          .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+            display:flex!important;
+            align-items:center!important;
+            justify-content:center!important;
+            width:100%!important;
+            height:220px!important;
+            padding:.65rem!important;
+            border:1px solid var(--line)!important;
+            background:#f3f0eb!important;
+            overflow:hidden!important;
+            box-sizing:border-box!important;
+          }
+          .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame img{
+            display:block!important;
+            width:100%!important;
+            height:100%!important;
+            object-fit:contain!important;
+          }
+          .corporate-installation-gallery.corporate-thumbnails .corporate-thumb h3{
+            font:400 1rem/1.25 Georgia,serif!important;
+            text-align:center!important;
+            margin:.7rem 0 0!important;
+          }
+          @media(max-width:850px){
+            .corporate-installation-gallery.corporate-thumbnails{
+              grid-template-columns:repeat(3,minmax(130px,1fr))!important;
+              gap:3.5rem 2rem!important;
+            }
+          }
+          @media(max-width:650px){
+            .corporate-installation-gallery.corporate-thumbnails{
+              grid-template-columns:repeat(2,minmax(120px,1fr))!important;
+              gap:3rem 1.5rem!important;
+            }
+            .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+              height:190px!important;
+            }
+          }
+          @media(max-width:390px){
+            .corporate-installation-gallery.corporate-thumbnails{
+              grid-template-columns:1fr!important;
+            }
+            .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+              max-width:200px!important;
+            }
+            .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+              height:210px!important;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+
         const c = data.corporate || {};
         const pageTitle = document.querySelector('.corporate-hero h1, .page-hero h1');
         if (pageTitle) pageTitle.textContent = c.page_title || 'Corporate Installations';
