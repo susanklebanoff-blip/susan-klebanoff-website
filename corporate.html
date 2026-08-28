@@ -7,12 +7,12 @@
   <meta name="description" content="Corporate installations and site-specific multilayered tapestries by Susan Klebanoff.">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Corporate thumbnails: preserve image size; add a visible charcoal mat outside the image area. */
+    /* Corporate thumbnails: preserve the image display area and place charcoal directly around each image, not around the thumbnail card. */
     .corporate-installation-gallery.corporate-thumbnails{
       display:grid!important;
       grid-template-columns:repeat(4,minmax(140px,1fr))!important;
-      gap:5rem 3.5rem!important;
-      max-width:1080px!important;
+      gap:4.5rem 3rem!important;
+      max-width:1040px!important;
       margin:0 auto!important;
       align-items:start!important;
     }
@@ -21,25 +21,25 @@
       width:100%!important;
       max-width:210px!important;
       margin:0 auto!important;
+      background:transparent!important;
     }
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
       display:flex!important;
       align-items:center!important;
       justify-content:center!important;
-      width:100%!important;
-      height:220px!important;
-      padding:0!important;
-      margin:18px 0!important;
+      width:calc(100% + 28px)!important;
+      height:248px!important;
+      padding:14px!important;
+      margin:-14px -14px 14px!important;
       overflow:hidden!important;
       box-sizing:border-box!important;
       border:1px solid #625e5b!important;
-      background:transparent!important;
-      box-shadow:0 0 0 18px #4a4745!important;
+      background:#4a4745!important;
     }
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame img{
       display:block!important;
-      width:100%!important;
-      height:100%!important;
+      width:auto!important;
+      height:auto!important;
       max-width:100%!important;
       max-height:100%!important;
       object-fit:contain!important;
@@ -47,6 +47,7 @@
       margin:0!important;
       background:transparent!important;
       transform:none!important;
+      box-shadow:none!important;
     }
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb h3{
       font:400 1rem/1.25 Georgia,serif!important;
@@ -56,18 +57,19 @@
     @media(max-width:850px){
       .corporate-installation-gallery.corporate-thumbnails{
         grid-template-columns:repeat(3,minmax(130px,1fr))!important;
-        gap:4.5rem 3rem!important;
+        gap:4rem 2.5rem!important;
       }
     }
     @media(max-width:650px){
       .corporate-installation-gallery.corporate-thumbnails{
         grid-template-columns:repeat(2,minmax(120px,1fr))!important;
-        gap:4rem 2.5rem!important;
+        gap:3.5rem 2rem!important;
       }
       .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
-        height:190px!important;
-        margin:14px 0!important;
-        box-shadow:0 0 0 14px #4a4745!important;
+        width:calc(100% + 24px)!important;
+        height:214px!important;
+        padding:12px!important;
+        margin:-12px -12px 12px!important;
       }
     }
     @media(max-width:390px){
@@ -78,7 +80,7 @@
         max-width:200px!important;
       }
       .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
-        height:210px!important;
+        height:234px!important;
       }
     }
   </style>
