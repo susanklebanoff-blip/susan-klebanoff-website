@@ -7,7 +7,7 @@
   <meta name="description" content="Corporate installations and site-specific multilayered tapestries by Susan Klebanoff.">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Corporate thumbnails: match Artwork thumbnail footprint and gray background while keeping installation photos visually large. */
+    /* Corporate thumbnails: same footprint as Artwork thumbnails, with a clearly visible gray mat around every image. */
     .corporate-installation-gallery.corporate-thumbnails{
       display:grid!important;
       grid-template-columns:repeat(4,minmax(140px,1fr))!important;
@@ -28,7 +28,7 @@
       justify-content:center!important;
       width:100%!important;
       height:220px!important;
-      padding:.65rem!important;
+      padding:14px!important;
       margin:0!important;
       overflow:hidden!important;
       box-sizing:border-box!important;
@@ -43,10 +43,9 @@
       max-height:100%!important;
       object-fit:contain!important;
       object-position:center!important;
-      background:#f3f0eb!important;
-      transform:scale(1.08)!important;
-      transform-origin:center center!important;
       margin:0!important;
+      background:transparent!important;
+      transform:none!important;
     }
     .corporate-installation-gallery.corporate-thumbnails .corporate-thumb h3{
       font:400 1rem/1.25 Georgia,serif!important;
@@ -66,6 +65,7 @@
       }
       .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
         height:190px!important;
+        padding:12px!important;
       }
     }
     @media(max-width:390px){
@@ -101,54 +101,14 @@
     <p class="eyebrow">Selected Corporate Installations</p>
     <h2 class="section-title">Select Installations</h2>
     <div class="corporate-installation-gallery corporate-thumbnails">
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/trammell-crow-corporation.html" aria-label="View Trammell Crow Corporation larger">
-    <span class="corporate-thumb-frame"><img src="assets/trammell-crow-corporation.jpg" alt="Trammell Crow Corporation, installation by Susan Klebanoff"></span>
-    <h3>Trammell Crow Corporation</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/goldwell-corporation.html" aria-label="View Goldwell Corporation larger">
-    <span class="corporate-thumb-frame"><img src="assets/goldwell-corporation.jpg" alt="Goldwell Corporation, installation by Susan Klebanoff"></span>
-    <h3>Goldwell Corporation</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/oracle-corporation.html" aria-label="View Oracle Corporation larger">
-    <span class="corporate-thumb-frame"><img src="assets/oracle-corporation.jpg" alt="Oracle Corporation, installation by Susan Klebanoff"></span>
-    <h3>Oracle Corporation</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/marriott-corporation.html" aria-label="View Marriott Corporation larger">
-    <span class="corporate-thumb-frame"><img src="assets/marriott-corporation.jpg" alt="Marriott Corporation, installation by Susan Klebanoff"></span>
-    <h3>Marriott Corporation</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/british-petroleum-corporation.html" aria-label="View British Petroleum Corporation larger">
-    <span class="corporate-thumb-frame"><img src="assets/british-petroleum-corporation.jpg" alt="British Petroleum Corporation, installation by Susan Klebanoff"></span>
-    <h3>British Petroleum Corporation</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/prudential-insurance-co.html" aria-label="View Prudential Insurance Co. larger">
-    <span class="corporate-thumb-frame"><img src="assets/prudential-insurance-co.jpg" alt="Prudential Insurance Co., installation by Susan Klebanoff"></span>
-    <h3>Prudential Insurance Co.</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/us-ambassadors-residency-moscow.html" aria-label="View U.S. Ambassador’s Residency — Moscow larger">
-    <span class="corporate-thumb-frame"><img src="assets/us-ambassadors-residency-moscow.jpg" alt="U.S. Ambassador’s Residency — Moscow, installation by Susan Klebanoff"></span>
-    <h3>U.S. Ambassador’s Residency — Moscow</h3>
-  </a>
-</article>
-<article class="corporate-thumb">
-  <a class="corporate-thumb-link" href="corporate-view/washington-post-lobby.html" aria-label="View Washington Post Lobby larger">
-    <span class="corporate-thumb-frame"><img src="assets/washington-post-lobby.jpg" alt="Washington Post Lobby, installation by Susan Klebanoff"></span>
-    <h3>Washington Post Lobby</h3>
-  </a>
-</article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/trammell-crow-corporation.html" aria-label="View Trammell Crow Corporation larger"><span class="corporate-thumb-frame"><img src="assets/trammell-crow-corporation.jpg" alt="Trammell Crow Corporation, installation by Susan Klebanoff"></span><h3>Trammell Crow Corporation</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/goldwell-corporation.html" aria-label="View Goldwell Corporation larger"><span class="corporate-thumb-frame"><img src="assets/goldwell-corporation.jpg" alt="Goldwell Corporation, installation by Susan Klebanoff"></span><h3>Goldwell Corporation</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/oracle-corporation.html" aria-label="View Oracle Corporation larger"><span class="corporate-thumb-frame"><img src="assets/oracle-corporation.jpg" alt="Oracle Corporation, installation by Susan Klebanoff"></span><h3>Oracle Corporation</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/marriott-corporation.html" aria-label="View Marriott Corporation larger"><span class="corporate-thumb-frame"><img src="assets/marriott-corporation.jpg" alt="Marriott Corporation, installation by Susan Klebanoff"></span><h3>Marriott Corporation</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/british-petroleum-corporation.html" aria-label="View British Petroleum Corporation larger"><span class="corporate-thumb-frame"><img src="assets/british-petroleum-corporation.jpg" alt="British Petroleum Corporation, installation by Susan Klebanoff"></span><h3>British Petroleum Corporation</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/prudential-insurance-co.html" aria-label="View Prudential Insurance Co. larger"><span class="corporate-thumb-frame"><img src="assets/prudential-insurance-co.jpg" alt="Prudential Insurance Co., installation by Susan Klebanoff"></span><h3>Prudential Insurance Co.</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/us-ambassadors-residency-moscow.html" aria-label="View U.S. Ambassador’s Residency — Moscow larger"><span class="corporate-thumb-frame"><img src="assets/us-ambassadors-residency-moscow.jpg" alt="U.S. Ambassador’s Residency — Moscow, installation by Susan Klebanoff"></span><h3>U.S. Ambassador’s Residency — Moscow</h3></a></article>
+<article class="corporate-thumb"><a class="corporate-thumb-link" href="corporate-view/washington-post-lobby.html" aria-label="View Washington Post Lobby larger"><span class="corporate-thumb-frame"><img src="assets/washington-post-lobby.jpg" alt="Washington Post Lobby, installation by Susan Klebanoff"></span><h3>Washington Post Lobby</h3></a></article>
     </div>
   </section>
 
@@ -182,57 +142,7 @@
     <h2 class="section-title">Corporate, public, and institutional installations</h2>
     <p class="lede">Susan Klebanoff has 45 years of experience working with international corporations and government entities to successfully transform lobby spaces in those office settings.</p>
     <div class="client-list" role="list">
-      <p role="listitem">Smithsonian Institution, Renwick Art Gallery-Washington, DC</p>
-      <p role="listitem">Museum of Modern Art - Nagoya, Japan</p>
-      <p role="listitem">Chubu - Nippon Broadcasting - Nagoya, Japan</p>
-      <p role="listitem">U.S. Ambassador's Residency - Formal Dining Room - Moscow, Russia</p>
-      <p role="listitem">United States Embassy - Main Lobby - Colombo, Sri Lanka</p>
-      <p role="listitem">Ritz Carlton Liner- Amsterdam</p>
-      <p role="listitem">Trammell Crow Corporation - Main Lobby - Charlotte, NC</p>
-      <p role="listitem">IBM Corporation - Main Lobby - Gaithersburg, MD</p>
-      <p role="listitem">TRW Corporation- Mail Lobby - Fairfax, VA</p>
-      <p role="listitem">Ritz Carlton Yacht Collection- Amsterdam</p>
-      <p role="listitem">Mitsui Corporation - Main Lobby - Mie, Japan</p>
-      <p role="listitem">Greater Baltimore Medical Center - Lobby - Baltimore, MD</p>
-      <p role="listitem">Hilton Hotel - Main Lobby - Hartford, CT</p>
-      <p role="listitem">U.S. Department of State - Conference Room - Washington, DC</p>
-      <p role="listitem">Giant Foods, Incorporated - Main Lobby - Landover, MD</p>
-      <p role="listitem">USA Today - President's Office - Rosslyn, VA</p>
-      <p role="listitem">Design Group Consultants - Main Lobby - Toronto, Canada</p>
-      <p role="listitem">Arthur Young &amp; Company - Office - New York, NY</p>
-      <p role="listitem">Rose Associates - Main Lobby - New York, NY</p>
-      <p role="listitem">Veterans Administration Hospital - Chapel - Bronx, NY</p>
-      <p role="listitem">Bear Sterns - Conference Room - Dallas, TX</p>
-      <p role="listitem">ARCH Communications - President's Office - Hartford, CT</p>
-      <p role="listitem">United States Embassy, Office - Bonn, Germany</p>
-      <p role="listitem">First National Bank of Connecticut - Main Lobby - Hartford, CT</p>
-      <p role="listitem">Argosy Oil Company - Main Lobby - Oklahoma City, OK</p>
-      <p role="listitem">Manhattan West Medical Group - Office - New York, NY</p>
-      <p role="listitem">Veterans Administration Hospital - Conference Room - Pittsburgh, PA</p>
-      <p role="listitem">Newport News Shipbuilding - Conference Room - Newport News, VA</p>
-      <p role="listitem">TRW - Conference Room - Cleveland, OH</p>
-      <p role="listitem">Chase Enterprises - President's Office - Hartford, CT</p>
-      <p role="listitem">Prudential Insurance Company - Main Lobby - Tyson's Corner, VA</p>
-      <p role="listitem">Centennial Development Corporation - Main Lobby - Tyson's Corner, VA</p>
-      <p role="listitem">IBM Corporation - Main Lobby - Washington, DC</p>
-      <p role="listitem">Cullinet Softwares - Main Lobby - Boston, MA</p>
-      <p role="listitem">Kirkpatrick &amp; Lockhart - Conference Room - Washington, DC</p>
-      <p role="listitem">Evans Company - Main Lobby - McLean, VA</p>
-      <p role="listitem">Artery Organization - Main Lobby - Bethesda, MD</p>
-      <p role="listitem">Peat Marwick - Reception - Washington, DC</p>
-      <p role="listitem">Kaiser Permanente - Lobby - Kensington, MD</p>
-      <p role="listitem">British Petroleum - Conference Room - Washington, DC</p>
-      <p role="listitem">Royal Caribbean Cruise Line-"Voyages of the Sea" Oslo, Norway</p>
-      <p role="listitem">Royal Caribbean Cruise Line-"Explorers of the Sea" Oslo, Norway</p>
-      <p role="listitem">Royal Caribbean Cruise Line- "Adventures of the Sea" Oslo Norway</p>
-      <p role="listitem">ATT Corporation- Washington DC</p>
-      <p role="listitem">Oracle- Vienna, VA</p>
-      <p role="listitem">Capital One Visa- McLean, VA</p>
-      <p role="listitem">World Golf Village- Jacksonville, FL</p>
-      <p role="listitem">Blue Cross Blue Shield of New Mexico,-Main Lobby-Albuquerque, NM</p>
-      <p role="listitem">Norbertine Spiritual Retreat Center- ABQ, NM</p>
-      <p role="listitem">Ball Law Offices- Rockville, MD</p>
-      <p role="listitem"><em>And many others</em></p>
+      <p role="listitem">Smithsonian Institution, Renwick Art Gallery-Washington, DC</p><p role="listitem">Museum of Modern Art - Nagoya, Japan</p><p role="listitem">Chubu - Nippon Broadcasting - Nagoya, Japan</p><p role="listitem">U.S. Ambassador's Residency - Formal Dining Room - Moscow, Russia</p><p role="listitem">United States Embassy - Main Lobby - Colombo, Sri Lanka</p><p role="listitem">Ritz Carlton Liner- Amsterdam</p><p role="listitem">Trammell Crow Corporation - Main Lobby - Charlotte, NC</p><p role="listitem">IBM Corporation - Main Lobby - Gaithersburg, MD</p><p role="listitem">TRW Corporation- Mail Lobby - Fairfax, VA</p><p role="listitem">Ritz Carlton Yacht Collection- Amsterdam</p><p role="listitem">Mitsui Corporation - Main Lobby - Mie, Japan</p><p role="listitem">Greater Baltimore Medical Center - Lobby - Baltimore, MD</p><p role="listitem">Hilton Hotel - Main Lobby - Hartford, CT</p><p role="listitem">U.S. Department of State - Conference Room - Washington, DC</p><p role="listitem">Giant Foods, Incorporated - Main Lobby - Landover, MD</p><p role="listitem">USA Today - President's Office - Rosslyn, VA</p><p role="listitem">Design Group Consultants - Main Lobby - Toronto, Canada</p><p role="listitem">Arthur Young &amp; Company - Office - New York, NY</p><p role="listitem">Rose Associates - Main Lobby - New York, NY</p><p role="listitem">Veterans Administration Hospital - Chapel - Bronx, NY</p><p role="listitem">Bear Sterns - Conference Room - Dallas, TX</p><p role="listitem">ARCH Communications - President's Office - Hartford, CT</p><p role="listitem">United States Embassy, Office - Bonn, Germany</p><p role="listitem">First National Bank of Connecticut - Main Lobby - Hartford, CT</p><p role="listitem">Argosy Oil Company - Main Lobby - Oklahoma City, OK</p><p role="listitem">Manhattan West Medical Group - Office - New York, NY</p><p role="listitem">Veterans Administration Hospital - Conference Room - Pittsburgh, PA</p><p role="listitem">Newport News Shipbuilding - Conference Room - Newport News, VA</p><p role="listitem">TRW - Conference Room - Cleveland, OH</p><p role="listitem">Chase Enterprises - President's Office - Hartford, CT</p><p role="listitem">Prudential Insurance Company - Main Lobby - Tyson's Corner, VA</p><p role="listitem">Centennial Development Corporation - Main Lobby - Tyson's Corner, VA</p><p role="listitem">IBM Corporation - Main Lobby - Washington, DC</p><p role="listitem">Cullinet Softwares - Main Lobby - Boston, MA</p><p role="listitem">Kirkpatrick &amp; Lockhart - Conference Room - Washington, DC</p><p role="listitem">Evans Company - Main Lobby - McLean, VA</p><p role="listitem">Artery Organization - Main Lobby - Bethesda, MD</p><p role="listitem">Peat Marwick - Reception - Washington, DC</p><p role="listitem">Kaiser Permanente - Lobby - Kensington, MD</p><p role="listitem">British Petroleum - Conference Room - Washington, DC</p><p role="listitem">Royal Caribbean Cruise Line-"Voyages of the Sea" Oslo, Norway</p><p role="listitem">Royal Caribbean Cruise Line-"Explorers of the Sea" Oslo, Norway</p><p role="listitem">Royal Caribbean Cruise Line- "Adventures of the Sea" Oslo Norway</p><p role="listitem">ATT Corporation- Washington DC</p><p role="listitem">Oracle- Vienna, VA</p><p role="listitem">Capital One Visa- McLean, VA</p><p role="listitem">World Golf Village- Jacksonville, FL</p><p role="listitem">Blue Cross Blue Shield of New Mexico,-Main Lobby-Albuquerque, NM</p><p role="listitem">Norbertine Spiritual Retreat Center- ABQ, NM</p><p role="listitem">Ball Law Offices- Rockville, MD</p><p role="listitem"><em>And many others</em></p>
     </div>
   </section>
 </main>
