@@ -24,126 +24,39 @@
   "available": {
     "page_title": "Available",
     "works": [
-      {
-        "title": "Golden",
-        "image": "assets/golden.jpg",
-        "details": "39\"H × 35\"W × 7\"D",
-        "medium": "Multilayer tapestry"
-      },
-      {
-        "title": "Joyful",
-        "image": "assets/joyful.jpg",
-        "details": "4'H × 3.5'W × 8\"D · approximate size",
-        "medium": "Multilayer tapestry"
-      },
-      {
-        "title": "Angel's Wings — diptych",
-        "image": "assets/angels-wings-diptych.jpg",
-        "details": "60\"H × 26\"W × 10\"D · approximate size",
-        "medium": "Multilayer Tapestry"
-      }
+      {"title":"Golden","image":"assets/golden.jpg","details":"39\"H × 35\"W × 7\"D","medium":"Multilayer tapestry"},
+      {"title":"Joyful","image":"assets/joyful.jpg","details":"4'H × 3.5'W × 8\"D · approximate size","medium":"Multilayer tapestry"},
+      {"title":"Angel's Wings — diptych","image":"assets/angels-wings-diptych.jpg","details":"60\"H × 26\"W × 10\"D · approximate size","medium":"Multilayer Tapestry"}
     ]
   },
   "artworks": {
     "page_title": "Artworks",
     "intro": "Selected works. Click any artwork to open a much larger view.",
     "works": [
-      {
-        "title": "Sandia Crest",
-        "thumb": "assets/sandia-crest.jpg",
-        "view": "artwork-view/sandia-crest.html"
-      },
-      {
-        "title": "HollyHocks",
-        "thumb": "assets/hollyhocks.jpg",
-        "view": "artwork-view/hollyhocks.html"
-      },
-      {
-        "title": "Phoenix",
-        "thumb": "assets/phoenix.jpg",
-        "view": "artwork-view/phoenix.html"
-      },
-      {
-        "title": "Starburst",
-        "thumb": "assets/starburst.jpg",
-        "view": "artwork-view/starburst.html"
-      },
-      {
-        "title": "Hollyhock Improvization",
-        "thumb": "assets/hollyhock-improvization.jpg",
-        "view": "artwork-view/hollyhock-improvization.html"
-      },
-      {
-        "title": "Portrait of a Traveler",
-        "thumb": "assets/portrait-of-a-traveler-new.jpg",
-        "view": "artwork-view/portrait-of-a-traveler.html"
-      },
-      {
-        "title": "Exotic Floral",
-        "thumb": "assets/exotic-floral-new.jpg",
-        "view": "artwork-view/exotic-floral.html"
-      },
-      {
-        "title": "Gradations",
-        "thumb": "assets/gradations.jpg",
-        "view": "artwork-view/gradations.html"
-      },
-      {
-        "title": "Seascape",
-        "thumb": "assets/seascape.jpg",
-        "view": "artwork-view/seascape.html"
-      },
-      {
-        "title": "Perfect Union",
-        "thumb": "assets/perfect-union-new.jpg",
-        "view": "artwork-view/perfect-union.html"
-      }
+      {"title":"HollyHocks","thumb":"assets/hollyhocks.jpg","view":"artwork-view/hollyhocks.html"},
+      {"title":"Phoenix","thumb":"assets/phoenix.jpg","view":"artwork-view/phoenix.html"},
+      {"title":"Starburst","thumb":"assets/starburst.jpg","view":"artwork-view/starburst.html"},
+      {"title":"Hollyhock Improvization","thumb":"assets/hollyhock-improvization.jpg","view":"artwork-view/hollyhock-improvization.html"},
+      {"title":"Portrait of a Traveler","thumb":"assets/portrait-of-a-traveler-new.jpg","view":"artwork-view/portrait-of-a-traveler.html"},
+      {"title":"Exotic Floral","thumb":"assets/exotic-floral-new.jpg","view":"artwork-view/exotic-floral.html"},
+      {"title":"Gradations","thumb":"assets/gradations.jpg","view":"artwork-view/gradations.html"},
+      {"title":"Seascape","thumb":"assets/seascape.jpg","view":"artwork-view/seascape.html"},
+      {"title":"Perfect Union","thumb":"assets/perfect-union-new.jpg","view":"artwork-view/perfect-union.html"},
+      {"title":"Sandia Crest","thumb":"assets/sandia-crest.jpg","view":"artwork-view/sandia-crest.html"}
     ]
   },
   "corporate": {
     "page_title": "Corporate Installations",
     "gallery_title": "Select Installations",
     "installations": [
-      {
-        "title": "Trammell Crow Corporation",
-        "thumb": "assets/trammell-crow-corporation.jpg",
-        "view": "corporate-view/trammell-crow-corporation.html"
-      },
-      {
-        "title": "Goldwell Corporation",
-        "thumb": "assets/goldwell-corporation.jpg",
-        "view": "corporate-view/goldwell-corporation.html"
-      },
-      {
-        "title": "Oracle Corporation",
-        "thumb": "assets/oracle-corporation.jpg",
-        "view": "corporate-view/oracle-corporation.html"
-      },
-      {
-        "title": "Marriott Corporation",
-        "thumb": "assets/marriott-corporation.jpg",
-        "view": "corporate-view/marriott-corporation.html"
-      },
-      {
-        "title": "British Petroleum Corporation",
-        "thumb": "assets/british-petroleum-corporation.jpg",
-        "view": "corporate-view/british-petroleum-corporation.html"
-      },
-      {
-        "title": "Prudential Insurance Co.",
-        "thumb": "assets/prudential-insurance-co.jpg",
-        "view": "corporate-view/prudential-insurance-co.html"
-      },
-      {
-        "title": "U.S. Ambassador’s Residency — Moscow",
-        "thumb": "assets/us-ambassadors-residency-moscow.jpg",
-        "view": "corporate-view/us-ambassadors-residency-moscow.html"
-      },
-      {
-        "title": "Washington Post Lobby",
-        "thumb": "assets/washington-post-lobby.jpg",
-        "view": "corporate-view/washington-post-lobby.html"
-      }
+      {"title":"Trammell Crow Corporation","thumb":"assets/trammell-crow-corporation.jpg","view":"corporate-view/trammell-crow-corporation.html"},
+      {"title":"Goldwell Corporation","thumb":"assets/goldwell-corporation.jpg","view":"corporate-view/goldwell-corporation.html"},
+      {"title":"Oracle Corporation","thumb":"assets/oracle-corporation.jpg","view":"corporate-view/oracle-corporation.html"},
+      {"title":"Marriott Corporation","thumb":"assets/marriott-corporation.jpg","view":"corporate-view/marriott-corporation.html"},
+      {"title":"British Petroleum Corporation","thumb":"assets/british-petroleum-corporation.jpg","view":"corporate-view/british-petroleum-corporation.html"},
+      {"title":"Prudential Insurance Co.","thumb":"assets/prudential-insurance-co.jpg","view":"corporate-view/prudential-insurance-co.html"},
+      {"title":"U.S. Ambassador’s Residency — Moscow","thumb":"assets/us-ambassadors-residency-moscow.jpg","view":"corporate-view/us-ambassadors-residency-moscow.html"},
+      {"title":"Washington Post Lobby","thumb":"assets/washington-post-lobby.jpg","view":"corporate-view/washington-post-lobby.html"}
     ]
   },
   "videos": {
