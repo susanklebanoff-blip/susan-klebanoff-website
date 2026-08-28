@@ -111,8 +111,8 @@
             width:100%!important;
             height:220px!important;
             padding:.65rem!important;
-            border:1px solid var(--line)!important;
-            background:#f3f0eb!important;
+            border:1px solid #625e5b!important;
+            background:#4a4745!important;
             overflow:hidden!important;
             box-sizing:border-box!important;
           }
