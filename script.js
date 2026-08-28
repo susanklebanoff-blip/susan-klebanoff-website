@@ -1,6 +1,15 @@
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 const b=document.querySelector('[data-menu-button]'),n=document.querySelector('[data-nav]');if(b&&n){b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false')})}
 
+// Corporate page: place selected installation thumbnails above the introductory statement.
+(() => {
+  if (!/corporate\.html$/.test(location.pathname)) return;
+  const thumbnails = document.querySelector('.legacy-corporate');
+  const statement = document.querySelector('.corporate-statement');
+  if (thumbnails && statement && statement.parentNode) {
+    statement.parentNode.insertBefore(thumbnails, statement);
+  }
+})();
 
 // Artworks lightbox
 (() => {
