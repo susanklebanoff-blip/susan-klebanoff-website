@@ -42,8 +42,6 @@
       {"title":"Gradations","thumb":"assets/gradations.jpg","view":"artwork-view/gradations.html"},
       {"title":"Seascape","thumb":"assets/seascape-new.webp","view":"artwork-view/seascape.html"},
       {"title":"Perfect Union","thumb":"assets/perfect-union-new.jpg","view":"artwork-view/perfect-union.html"},
-      {"title":"Gliddens Pupil of Kandinsky","thumb":"assets/gliddens-pupil-of-kandinsky.jpg","view":"artwork-view/gliddens-pupil-of-kandinsky.html"},
-      {"title":"Changing Space","thumb":"assets/changing-space.jpg","view":"artwork-view/changing-space.html"},
       {"title":"Sandia Crest","thumb":"assets/sandia-crest-large.jpg","view":"artwork-view/sandia-crest.html"}
     ]
   },
