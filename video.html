@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Videos — Susan Klebanoff</title>
-  <meta name="description" content="Video works and studio documentation by Susan Klebanoff.">
+  <title>Tapestry &amp; Fiber Art Videos — Susan Klebanoff</title>
+  <meta name="description" content="Watch videos of Susan Klebanoff's multilayer tapestries, contemporary fiber art, textile installations, and the effects of light on sculptural tapestry.">
+  <meta name="keywords" content="Susan Klebanoff videos, tapestry video, fiber art video, textile art, multilayer tapestry, sculptural tapestry, corporate art installation video">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,7 +54,7 @@
   if (window.location.protocol === 'file:') {
     container.innerHTML = `
       <a class="video-local-fallback" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener" aria-label="Play Susan Klebanoff video on YouTube">
-        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Susan Klebanoff video preview">
+        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Susan Klebanoff contemporary tapestry and fiber art video preview">
         <span class="video-play-button">▶</span>
         <span class="video-play-label">Play video</span>
       </a>
@@ -61,7 +62,7 @@
   } else {
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0`;
-    iframe.title = 'Susan Klebanoff video';
+    iframe.title = 'Susan Klebanoff multilayer tapestry and fiber art video';
     iframe.loading = 'lazy';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
