@@ -6,6 +6,60 @@
   <title>Corporate Installations — Susan Klebanoff</title>
   <meta name="description" content="Corporate installations and site-specific multilayered tapestries by Susan Klebanoff.">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Corporate gallery: larger thumbnails only. Existing links to large views and carousel/navigation remain unchanged. */
+    .corporate-installation-gallery.corporate-thumbnails{
+      grid-template-columns:repeat(4,minmax(190px,1fr))!important;
+      max-width:1160px!important;
+      gap:3.5rem 2.5rem!important;
+    }
+    .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+      max-width:250px!important;
+    }
+    .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+      height:255px!important;
+      padding:.7rem!important;
+    }
+    .corporate-installation-gallery.corporate-thumbnails .corporate-thumb h3{
+      font-size:1rem!important;
+      margin-top:.7rem!important;
+    }
+    @media(max-width:900px){
+      .corporate-installation-gallery.corporate-thumbnails{
+        grid-template-columns:repeat(3,minmax(170px,1fr))!important;
+        max-width:820px!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+        max-width:235px!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+        height:235px!important;
+      }
+    }
+    @media(max-width:650px){
+      .corporate-installation-gallery.corporate-thumbnails{
+        grid-template-columns:repeat(2,minmax(130px,1fr))!important;
+        gap:3rem 1.5rem!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+        max-width:210px!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+        height:215px!important;
+      }
+    }
+    @media(max-width:390px){
+      .corporate-installation-gallery.corporate-thumbnails{
+        grid-template-columns:1fr!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb{
+        max-width:235px!important;
+      }
+      .corporate-installation-gallery.corporate-thumbnails .corporate-thumb-frame{
+        height:235px!important;
+      }
+    }
+  </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
