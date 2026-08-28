@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://susanklebanoff-blip.github.io/susan-klebanoff-website/sitemap.xml
