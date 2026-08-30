@@ -42,7 +42,8 @@
       {"title":"Gradations","thumb":"assets/gradations.jpg","view":"artwork-view/gradations.html"},
       {"title":"Seascape","thumb":"assets/seascape-new.webp","view":"artwork-view/seascape.html"},
       {"title":"Perfect Union","thumb":"assets/perfect-union-new.jpg","view":"artwork-view/perfect-union.html"},
-      {"title":"Sandia Crest","thumb":"assets/sandia-crest-large.jpg","view":"artwork-view/sandia-crest.html"}
+      {"title":"Sandia Crest","thumb":"assets/sandia-crest-large.jpg","view":"artwork-view/sandia-crest.html"},
+      {"title":"In the Studio","thumb":"assets/in-the-studio.jpg","view":"artwork-view/in-the-studio.html"}
     ]
   },
   "corporate": {
