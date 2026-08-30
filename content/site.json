@@ -99,11 +99,6 @@
         "view": "artwork-view/sandia-crest.html"
       },
       {
-        "title": "In the Studio",
-        "thumb": "assets/in-the-studio.jpg",
-        "view": "artwork-view/in-the-studio.html"
-      },
-      {
         "title": "In the Studio II",
         "thumb": "assets/in-the-studio-ii.jpg",
         "view": "artwork-view/in-the-studio-ii.html"
